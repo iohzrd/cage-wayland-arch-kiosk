@@ -41,6 +41,8 @@ ExecStart=
 ExecStart=-/usr/bin/agetty --autologin <YOUR_USER> --noclear %I $TERM
 ```
 
+reference: https://wiki.archlinux.org/index.php/getty#Automatic_login_to_virtual_console
+
 ## Step 5: Auto start your kiosk application
 
 You can start cage (and therefore your kiosk application) automatically without a login manager, for example, by adding this to the end of ~/.bash_profile (~/.zlogin or ~/.zprofile for Zsh):
@@ -60,10 +62,10 @@ if [ "$(tty)" = "/dev/tty1" ]; then
 fi
 ```
 
+reference: https://github.com/swaywm/sway/wiki
+
 ## Further reading
 
 https://github.com/Hjdskes/cage/wiki/Configuration
-
-https://github.com/swaywm/sway/wiki
 
 https://kapeli.com/cheat_sheets/Chromium_Command_Line_Switches.docset/Contents/Resources/Documents/index
