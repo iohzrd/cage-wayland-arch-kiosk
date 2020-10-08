@@ -49,7 +49,7 @@ You can start cage (and therefore your kiosk application) automatically without 
 
 ```
 if [ "$(tty)" = "/dev/tty1" ]; then
-    export WLR_LIBINPUT_NO_DEVICES=1 # required for systems that doesn't have a keyboard or mouse.
+    export WLR_LIBINPUT_NO_DEVICES=1 # required for systems that doesn't have user inputs (keyboard, mouse).
     exec cage -d  -- <YOUR_APPLICATION>
 fi
 ```
