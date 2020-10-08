@@ -45,7 +45,7 @@ reference: https://wiki.archlinux.org/index.php/getty#Automatic_login_to_virtual
 
 ## Step 5: Auto start your kiosk application
 
-You can start cage (and therefore your kiosk application) automatically without a login manager, for example, by adding this to the end of ~/.bash_profile (~/.zlogin or ~/.zprofile for Zsh):
+You can start cage (and therefore your kiosk application) automatically without a login manager, for example, by adding this to the end of `~/.bash_profile` (`~/.zlogin` or `~/.zprofile` for Zsh):
 
 ```
 if [ "$(tty)" = "/dev/tty1" ]; then
