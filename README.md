@@ -62,9 +62,9 @@ if [ "$(tty)" = "/dev/tty1" ]; then
 fi
 ```
 
-reference: https://github.com/swaywm/sway/wiki
-
 ## Further reading
+
+https://github.com/swaywm/sway/wiki
 
 https://github.com/Hjdskes/cage/wiki/Configuration
 
