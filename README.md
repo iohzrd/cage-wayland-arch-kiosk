@@ -12,19 +12,13 @@ or for arm systems like raspberry pi 4
 
 https://archlinuxarm.org/platforms/armv8/broadcom/raspberry-pi-4
 
-## Step 2: Update packages
+## Step 2: Update and install dependencies
 
 ```
-pacman -Syyuu
+pacman -Syyuu at-spi2-atk atk cage chromium gdk-pixbuf2 gtk3 libxcomposite libxcursor libxi libxtst networkmanager sudo xorg-server-xwayland
 ```
 
-## Step 3: Install dependencies
-
-```
-pacman -S at-spi2-atk atk cage chromium gdk-pixbuf2 gtk3 libxcomposite libxcursor libxi libxtst networkmanager sudo xorg-server-xwayland
-```
-
-## Step 4: Enable auto login
+## Step 3: Enable auto login
 
 override the tty1 getty service via
 
@@ -43,7 +37,7 @@ ExecStart=-/usr/bin/agetty --autologin <YOUR_USER> --noclear %I $TERM
 
 reference: https://wiki.archlinux.org/index.php/getty#Automatic_login_to_virtual_console
 
-## Step 5: Auto start your kiosk application
+## Step 4: Auto start your kiosk application
 
 You can start cage (and therefore your kiosk application) automatically without a login manager, for example, by adding this to the end of `~/.bash_profile` (`~/.zlogin` or `~/.zprofile` for Zsh):
 
