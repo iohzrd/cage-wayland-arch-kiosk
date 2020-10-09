@@ -4,7 +4,7 @@
 
 In this tutorial you will learn how to setup an effecient, minimalist linux kiosk system utilizing Cage, a state of the art Wayland compositor designed specifically for kiosk use. This tutorial wil not be exhaustive but will get you up and running with the minimum required software.
 
-## Step 1: Install Arch linux on you target machine following their guide.
+## Step 1: Install Arch linux on your target machine following their guide.
 
 https://wiki.archlinux.org/index.php/installation_guide
 
