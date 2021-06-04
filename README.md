@@ -1,4 +1,4 @@
-# Cage / Wayland linux kiosk setup tutorial
+# Cage / Wayland arch linux kiosk setup
 
 ## About
 
