@@ -99,7 +99,7 @@ session        required        pam_unix.so
 session        required        pam_systemd.so
 ```
 
-Third, enable an instantiated service with ```systemctl enable cage@tty1.service``` (or any other TTY).
+Third, enable an instantiated service with ```systemctl enable cage@tty7.service``` (or any other TTY).
 
 Finally, change systemd's default target to the graphical target with ```systemctl set-default graphical.target```.
 
