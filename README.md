@@ -57,7 +57,15 @@ Type=simple
 Environment=WLR_LIBINPUT_NO_DEVICES=1
 # Disable cursor
 Environment=XCURSOR_PATH=0
-ExecStart=/usr/bin/cage /usr/bin/chromium
+# cage flags...
+# -d	 Don't draw client side decorations, when possible
+# -h	 Display this help message
+# -m extend Extend the display across all connected outputs (default)
+# -m last Use only the last connected output
+# -r	 Rotate the output 90 degrees clockwise, specify up to three times
+# -s	 Allow VT switching
+# -v	 Show the version number and exit
+ExecStart=/usr/bin/cage -d -s /usr/bin/chromium
 Restart=always
 User=cage
 # Log this user with utmp, letting it show up with commands 'w' and
