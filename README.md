@@ -55,8 +55,6 @@ After=getty@%i.service
 Type=simple
 # Required if device doesn't have a keyboard or mouse
 Environment=WLR_LIBINPUT_NO_DEVICES=1
-# Disable cursor
-Environment=XCURSOR_PATH=0
 # cage flags...
 # -d	 Don't draw client side decorations, when possible
 # -h	 Display this help message
