@@ -15,7 +15,7 @@ https://archlinuxarm.org/platforms/armv8/broadcom/raspberry-pi-4
 ## Step 2: Update and install dependencies
 
 ```
-pacman -Syyuu cage chromium xorg-xwayland
+pacman -Syyuu cage chromium xorg-xwayland weston
 ```
 
 ## Step 3: Starting Cage on boot with systemd
